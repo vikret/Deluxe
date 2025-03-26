@@ -1,0 +1,63 @@
+
+<!-- Deluxe - Product Page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deluxe - Product</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-white">
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between p-4 bg-gray-800">
+    <div class="flex items-center space-x-2">
+      <img src="logo.png" alt="Deluxe Logo" class="w-10 h-10" />
+      <span class="text-2xl font-bold text-lime-400">Deluxe</span>
+    </div>
+    <div class="space-x-6">
+      <a href="index.html" class="hover:text-lime-400">Home</a>
+      <a href="product.html" class="hover:text-lime-400">Product</a>
+      <a href="about.html" class="hover:text-lime-400">About Us</a>
+      <a href="delivery.html" class="hover:text-lime-400">Delivery</a>
+    </div>
+  </nav>
+
+  <!-- Product Section -->
+<section class="py-16 px-6 bg-gray-900 text-white">
+  <h1 class="text-4xl font-bold text-center text-lime-400 mb-10">Our Products</h1>
+
+  <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+    
+    <!-- Product Card -->
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+      <img src="product1.png" alt="Whiskey" class="w-full h-60 object-contain bg-gray-700 rounded-xl mb-4" />
+      <h2 class="text-2xl font-semibold mb-2">BEILEYS</h2>
+      <p class="mb-2">Baileys Original Irish Cream Liqueur 1L x 02 Bottles</p>
+      <p class="font-bold text-lime-400 mb-4">49.99 BGN</p>
+      <button class="bg-lime-400 text-gray-900 px-4 py-2 rounded hover:bg-lime-300 font-semibold">Order Now</button>
+    </div>
+
+    <!-- Duplicate this block for more products -->
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+      <img src="product2.png" alt="Whiskey" class="w-full h-60 object-contain bg-gray-700 rounded-xl mb-4" />
+      <h2 class="text-2xl font-semibold mb-2">CAJ</h2>
+      <p class="mb-2">Smooth Caribbean taste. Includes 2 mini bottles.</p>
+      <p class="font-bold text-lime-400 mb-4">39.99 BGN</p>
+      <button class="bg-lime-400 text-gray-900 px-4 py-2 rounded hover:bg-lime-300 font-semibold">Order Now</button>
+    </div>
+
+    <!-- Add more here... -->
+
+  </div>
+</section>
+
+
+  <footer class="text-center text-sm py-6 bg-gray-800">
+    &copy; 2025 Deluxe. All rights reserved.
+  </footer>
+</body>
+
+</html>

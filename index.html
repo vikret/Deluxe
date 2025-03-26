@@ -1,0 +1,63 @@
+
+<!-- Deluxe - Alcohol Store (Frontend Only Project) -->
+<!-- index.html - Home Page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deluxe - Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-white">
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between p-4 bg-gray-800">
+    <div class="flex items-center space-x-2">
+      <img src="logo.png" alt="Deluxe Logo" class="w-30 h-12" />
+      <span class="text-2xl font-bold text-lime-400"></span>
+    </div>
+    <div class="space-x-6">
+      <a href="index.html" class="hover:text-lime-400">Home</a>
+      <a href="product.html" class="hover:text-lime-400">Product</a>
+      <a href="about.html" class="hover:text-lime-400">About Us</a>
+      <a href="delivery.html" class="hover:text-lime-400">Delivery</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="text-center py-20 px-6">
+    <h1 class="text-4xl md:text-5xl font-bold mb-6 text-lime-400">Buy One. Get Two Minis Free.</h1>
+    <p class="text-xl max-w-xl mx-auto">Welcome to Deluxe – your premium alcohol store where every full-size bottle comes with two mini gifts.</p>
+    <a href="product.html" class="mt-6 inline-block bg-lime-400 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-lime-300">Shop Now</a>
+  </section>
+
+  <!-- Featured Product -->
+  <section class="text-center px-6 py-10 bg-gray-800">
+    <h2 class="text-3xl font-semibold mb-4">Featured: BEILEYS</h2>
+    <p class="mb-4">Rich, smooth, and aged to perfection. Comes with two mini bottles on every order.</p>
+    <img src="product1.png" alt="Whiskey" class="mx-auto h-64 rounded-lg shadow-lg" />
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm py-6 bg-gray-800">
+    &copy; 2025 Deluxe. All rights reserved.
+  </footer>
+
+<!-- Age Verification Modal -->
+<div id="ageModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+  <div class="bg-white p-6 rounded-lg text-center text-gray-900 max-w-sm">
+    <h2 class="text-xl font-bold mb-4">Are you 18 or older?</h2>
+    <p class="mb-6">You must be 18+ to enter this site.</p>
+    <button onclick="acceptAge()" class="bg-lime-500 hover:bg-lime-400 px-6 py-2 rounded font-semibold">Yes, I'm 18+</button>
+  </div>
+</div>
+<script>
+  function acceptAge() {
+    document.getElementById('ageModal').style.display = 'none';
+  }
+</script>
+</body>
+
+</html>
